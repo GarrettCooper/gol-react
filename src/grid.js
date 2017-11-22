@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Box from './box.js';
-import Grid from './grid.js';
 
-
-class App extends Component {
+class Grid extends Component {
   constructor(props) {
     super(props)
 
@@ -33,4 +29,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Grid;
