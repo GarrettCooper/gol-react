@@ -8,7 +8,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      grid: [[true, true, false],[false, false, false], [true, true, true]]
+      grid: [[true, true, true],[false, false, false], [true, true, true]]
     }
   }
 
@@ -24,7 +24,7 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
+      <div className="App" onClick={() => this.setState({grid: [[false, false, false],[true, true, true], [false, false, false]]})}>
         {boxes}
       </div>
     );
@@ -32,3 +32,5 @@ class App extends Component {
 }
 
 export default App;
+
+//[[true, true, false],[false, false, false], [true, true, true]]
